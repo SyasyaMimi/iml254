@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personality</title>
+
+<!-- External Font Awesome CSS for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Internal CSS -->
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url('wallpaper/dreamy.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    font-size: 24px;
+    font-family: 'Georgia', serif;
+  }
+
+  .content p {
+    font-size: 18px;
+    font-family: 'Verdana', sans-serif;
+    margin-bottom: 15px;
+  }
+
+  #div1 {
+    font-size: 48px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    flex: 50%;
+    padding: 10px;
+  }
+
+  .column img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+</style>
+
+
+<div class="container">
+  <div class="header">My Personality and MBTI</div>
+
+  <h2>Get to know my personality.</h2>
+
+  <div class="row">
+    <div class="column" style="background-color:pink;">
+      <center><h2><u>Personality</u></h2></center>
+      <div class="content">
+        <p>From the point of view of my friends, I am more of an introvert and shy person. I'm not used to socializing with people and often feel awkward when dealing with people I'm not close to. But, when I'm at home...I'm turned into a completed different person. Haha.</p>
+
+        <p>I do talk a lot at home with my mother and sister. Not only that, I always share a story with them even if the story is boring. My sister said that I was very noisy and always teased her until she was fed up with my behavior. He told me that he dreamed about me making jokes and stupid things and he laughed in the dream. There were many times I caught her laughing in her sleep at midnight. That made my hair stand on end because I thought he was possessed.</p>
+
+        <p>However, my self-confidence is low and I don't dare to look people in the eye. For example, I'm not confident giving a presentation in class because I'll think everyone will think badly of my work. I will try to avoid making eye contact with them. I hope I can regain confidence one day. Besides, I am easily amused by funny things. My close friend said, I am the type who always laughs and smiles and he rarely sees my tense face. He said, my angry face and glare are very scary. Muahahahaha!!</p>
+      </div>
+    </div>
+
+    <div class="column" style="background-color:powderblue;">
+      <center><h2><u>MBTI</u></h2></center>
+      <div class="content">
+        <p>A month ago, I tested my MBTI and I got ISFP.</p>
+
+        <center>
+          <img src="images/isfp.jfif" style= width:400px; height:400px" alt="ISFP Image">
+        </center>
+
+        <p>Here are some traits that ISFP personalities carry:</p>
+        <ul><h3>
+          <li>Can't differentiate between personal life and professional life at times</li>
+          <li>Can look through other's feelings and emotions easily</li>
+          <li>Likes nature and scenery over city vibes</li>
+          <li>Feels joy and happiness through small things</li>
+          <li>Prefers playing a "healer" role in games</li>
+          <li>Optimistic</li>
+          <li>Has the skill to find the meaning of life</li>
+          <li>Soft</li>
+          <li>Likes to include all and has a large capacity</li>
+          <li>Warm-Hearted</li></h3>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <video controls>
+    <source src="videos/WAS IT CRISPY_.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  </br>
+</div>
+
+<div id="div1" class="fa"></div>
+
+<script>
+  function smile() {
+    var a;
+    a = document.getElementById("div1");
+    a.innerHTML = "&#xf118;";
+    setTimeout(function () {
+      a.innerHTML = "&#xf11a;";
+    }, 1000);
+    setTimeout(function () {
+      a.innerHTML = "&#xf119;";
+    }, 2000);
+    setTimeout(function () {
+      a.innerHTML = "&#xf11a;";
+    }, 3000);
+  }
+  smile();
+  setInterval(smile, 4000);
+</script>
+
+<div class="back-to-home">
+    <a href="index.html" style="color: black; text-decoration: none; font-size: 1.2em;"><b>Back to Home</b></a>
+</div>
+
+</body>
+</html>

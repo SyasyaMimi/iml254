@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unforgettable memories</title>
+
+<!-- External Font Awesome CSS for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Internal CSS -->
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url('wallpaper/green.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    font-size: 24px;
+    font-family: 'Georgia', serif;
+  }
+
+  .content p {
+    font-size: 18px;
+    font-family: 'Verdana', sans-serif;
+    margin-bottom: 15px;
+  }
+
+  #div1 {
+    font-size: 48px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    flex: 50%;
+    padding: 10px;
+  }
+
+  .column img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+</style>
+
+
+</head>
+<body>
+
+<div class="container">
+  <div class="header">Unforgettable Memories</div>
+
+  <div class="row">
+    <div class="column" style="background-color:lime;">
+      <center><h2><u>My Unforgettable Memories</u></h2></center>
+      <div class="content">
+        <p><b>Family Vacation to the Mountains</b></p><p>One of my most unforgettable memories is from a family vacation to the mountain. It was a time of pure joy and adventure. We spent our days hiking through lush forests, discovering hidden waterfalls, and marveling at the breathtaking views from the peaks. The evenings were filled with cozy campfires, where we shared stories under the starry sky. The sense of togetherness and the beauty of nature made it an experience I will cherish forever.</p>
+
+        <p><b>A Heartwarming Reunion</b></p><p>Reuniting with a dear friend after many years was an unforgettable experience that filled my heart with joy. We picked up right where we left off, reminiscing about old times and creating new memories. The laughter, the hugs, and the shared stories reminded me of the enduring power of true friendship. It was a reminder that distance and time cannot diminish the bond we share with those who matter most to us.</p>
+        <p>However, my self-confidence is low and I don't dare to look people in the eye. For example, I'm not confident giving a presentation in class because I'll think everyone will think badly of my work. I will try to avoid making eye contact with them. I hope I can regain confidence one day. Besides, I am easily amused by funny things. My close friend said, I am the type who always laughs and smiles and he rarely sees my tense face. He said, my angry face and glare are very scary. Muahahahaha!!</p>
+      </div>
+    </div>
+
+    <div class="column" style="background-color:yellow;">
+      <center><h2>Celebrating Birthday</h2></center>
+      <div class="content">
+        <p>Celebrating my parents' 10th wedding anniversary was a heartwarming experience. The joy and pride on their faces, the stories shared, made it a day to remember.</p></p>
+
+        <center>
+        <img src="">
+        </center>
+        
+        
+      </div>
+    </div>
+  </div>
+
+
+<div id="div1" class="fa"></div>
+
+<script>
+  function smile() {
+    var a;
+    a = document.getElementById("div1");
+    a.innerHTML = "&#xf118;";
+    setTimeout(function () {
+      a.innerHTML = "&#xf11a;";
+    }, 1000);
+    setTimeout(function () {
+      a.innerHTML = "&#xf119;";
+    }, 2000);
+    setTimeout(function () {
+      a.innerHTML = "&#xf11a;";
+    }, 3000);
+  }
+  smile();
+  setInterval(smile, 4000);
+</script>
+
+<div class="back-to-home">
+    <a href="index.html" style="color: black; text-decoration: none; font-size: 1.2em;"><b>Back to Home</b></a>
+</div>
+
+</body>
+</html>

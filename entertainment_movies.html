@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie/Drama</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .movie {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .movie img {
+            width: 150px; /* Set fixed width */
+            height: 200px; /* Set fixed height */
+            object-fit: cover; /* Ensure aspect ratio is maintained */
+            margin-right: 20px;
+        }
+        .movie h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+<style>
+body {
+  background-image: url('wallpaper/belon.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+
+    <div class="container">
+        <center><h1><u>Movie/Drama</u></h1>
+        <h2>There are many movie/drama that I have watched but these are my favorites of all time.</h2></center>
+        <div id="movie-list"></div>
+    </div>
+
+
+
+<script>
+    const movies = [
+        {
+            title: "Stand By Me",
+            image: "images/doraemon.jpg",
+            description: "Sewashi and Doraemon find themselves way back in time and meet Nobita. It is up to Doraemon to take care of Nobita or else he will not return to the present."
+        },
+        {
+            title: "High & Low: The Worst",
+            image: "images/highlow.jpg",
+            description: "The street fighters of Oya High and the delinquent brawlers of Housen Academy face off against each other when both seemingly attack each other."
+        },
+        {
+            title: "Midnight",
+            image: "images/midnight.jpg",
+            description: "A woman with hearing impairment witnesses a serial killer stabbing someone. Soon, she becomes his next target as her brother and mother try to protect her from harm."
+        },
+        {
+            title: "Make Me Shudder",
+            image: "images/shudder.jpg",
+            description: "A group of students want to challenge themselves by entering the most haunted building of their school, which is forbidden."
+      
+        },
+        {
+            title: "Sekali Lagi Cinta Kembali",
+   	        image: "images/cinta.jpg",
+    	description: "Aira, an outspoken girl who often speaks without thinking first. She hates cheating men the most. Imran, who has been in love with her for years, cheated on Hana. Hana is her younger sister. The relationship with the family continued to be severed when her mother approved of Hana's marriage to Imran."
+    },
+        {
+   		title: "Cheese in The Trap",
+    	image: "images/trap.jpg",
+    	description: "Hong Seol, a student from a poor family, falls in love with Yoo Jung, a rich and handsome man with psychopathic tendencies. The couple faces many issues due to the differences in their personalities."
+	    },
+        {
+   		title: "Marry My Husband",
+    	image: "images/marry.jpg",
+    	description: "When a woman witnesses the affair between her best friend and her husband, and is murdered by them, she goes back in time to change her future and seek revenge."
+	    },
+        {
+    	title: "Kill Me, Heal Me",
+    	image: "images/heal.jpg",
+    	description: "Love blooms when Cha Do Hyun, the son of a Korean conglomerate, secretly hires psychiatric resident Oh Ri Jin to treat his multiple personality disorder."
+        },
+        {
+    	title: "Duty After School",
+    	image: "images/duty.jpg",
+    	description: "A sudden invasion by an alien race quickly overwhelms the South Korean military. The government is forced to take a drastic measure by requiring senior high school students to join the armed forces."
+	    },
+	    {
+            title: "Extraordinary You",
+    	image: "images/extra.jpg",
+    	description: "When a high-school girl finds that she is merely a character from a comic book whose destiny is decided by the writer, she decides to change the plot to suit her desires and find the love of her life."
+        },
+        {
+            title: "The Legend of The Blue Sea",
+            image: "images/bluesea.jpg",
+    	description: "A mermaid, Se-hwa, starts following a con man, Joon-jae, who initially helps her out. However, while she tries to adapt to the human world, she finds herself falling in love with him."
+	    },
+	    {
+    	title: "Strong Girl Bong Soon",
+    	image: "images/strong.jpg",
+    	description: "Bong-soon gets hired as a bodyguard to Min-hyuk, a video game company's CEO. When she finds herself falling in love with her employer, she gets torn between him and her childhood crush, Guk-doo."
+        }
+    ];
+
+    const movieList = document.getElementById('movie-list');
+
+    movies.forEach(movie => {
+        const movieDiv = document.createElement('div');
+        movieDiv.classList.add('movie');
+        
+        movieDiv.innerHTML = `
+            <img src="${movie.image}" alt="${movie.title}">
+            <div>
+                <h2>${movie.title}</h2>
+                <p>${movie.description}</p>
+            </div>
+        `;
+        
+        movieList.appendChild(movieDiv);
+    });
+</script>
+
+<div class="back-to-home">
+    <a href="index.html" style="color: black; text-decoration: none; font-size: 1.2em;"><b>Back to Home</b></a>
+</div>
+
+</body>
+</html>

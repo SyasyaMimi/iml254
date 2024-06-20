@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://www.toptal.com/designers/subtlepatterns/uploads/memphis-mini.png'); /* Background image */
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1, h2 {
+         
+            color: #444;
+        }
+        .music {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .music img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .music h2 {
+            margin-top: 0;
+        }
+        .music p {
+            margin: 10px 0 0;
+            color: #666;
+        }
+    </style>
+
+<style>
+body {
+  background-image: url('wallpaper/love.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+  
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Music Recommendations</h1>
+        <h2>Here are some of my favorite music tracks of all time.</h2>
+        <div id="music-list"></div>
+    </div>
+
+    <script>
+        const musicTracks = [
+            {
+                title: "Katasumi",
+                artist: "The Rampage from Exile Tribe",
+                image: "images/lafiesta.jpg",
+                description: "A soulful song."
+            },
+            {
+                title: "Thank You, Family",
+                artist: "TWICE",
+                image: "images/twice.jpg",
+                description: "A RNB song with a catchy chorus."
+            },
+            {
+                title: "La Fiesta",
+                artist: "The Rampage from Exile Tribe",
+                image: "images/lafiesta.jpg",
+                description: "A disco-inspired pop song with a latin beat."
+            },
+            {
+                title: "I Like You",
+                artist: "INFINITE",
+                image: "images/like.jpg",
+                description: "A upbeat track with a catchy chorus."
+            },
+            {
+                title: "The Eye",
+                artist: "INFINITE",
+                image: "images/eye.jpg",
+                description: "An emotional ballad about friendship."
+            },
+            {
+                title: "Enchanted",
+                artist: "Taylor Swift",
+                image: "images/enchanted.jpg",
+                description: "A romantic ballad song."
+
+            },
+            {
+                title: "Bad Liar (cover)",
+                artist: "Jada Facer",
+                image: "images/bad.jpg",
+                description: "The lyrics are about when you first start having feelings for someone, but don't want to admit it, which turns you into a 'Bad Liar.."
+            },
+            {
+                title: "No Limit",
+                artist: "The Rampage from Exile Tribe",
+                image: "images/nolimit.jpg",
+                description: "This song is a about continuing to taking challenges in the infinite world."
+            },
+            {
+                title: "Queen of Hearts",
+                artist: "TWICE",
+                image: "images/one.jpg",
+                description: "A pop rock song!." 
+            },
+            {
+                title: "Bloom",
+                artist: "TWICE",
+                image: "images/bloom.jpg",
+                description: "A song with many falsetto part."
+
+
+            }
+        ];
+
+        const musicList = document.getElementById('music-list');
+
+        musicTracks.forEach(track => {
+            const musicDiv = document.createElement('div');
+            musicDiv.classList.add('music');
+            
+            musicDiv.innerHTML = `
+                <img src="${track.image}" alt="${track.title}">
+                <div>
+                    <h2>${track.title}</h2>
+                    <h3>${track.artist}</h3>
+                    <p>${track.description}</p>
+                </div>
+            `;
+            
+            musicList.appendChild(musicDiv);
+        });
+    </script>
+
+<div class="back-to-home">
+    <a href="index.html" style="color: black; text-decoration: none; font-size: 1.2em;"><b>Back to Home</b></a>
+</div>
+
+</body>
+</html>
